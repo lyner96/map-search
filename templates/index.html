@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Location search</title>
+
+    <link rel="stylesheet" href="static/css/leaflet.css"/>
+    <link rel="stylesheet" href="static/css/screen.css"/>
+    <link rel="stylesheet" href="static/css/MarkerCluster.css"/>
+    <link rel="stylesheet" href="static/css/MarkerCluster.Default.css"/>
+    <link rel="stylesheet" href="static/css/leaflet-search.min.css"/>
+    <link rel="stylesheet" href="static/css/L.Control.Locate.min.css"/>
+    <link rel="stylesheet" href="static/css/L.Control.Sidebar.css"/>
+    <link rel="stylesheet" href="static/css/L.Control.Sidebar.scss"/>
+    <link rel="stylesheet" href="static/css/styles.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="static/css/icon.css"/>
+    <link rel="stylesheet" href="static/css/button.css"/>
+    <link rel="stylesheet" href="static/css/segment.css"/>
+    <link rel="stylesheet" href="static/css/search.css"/>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            text-align:center;
+        }
+        html, body, #map {
+            height: 100%;
+            width: 100%;
+        }
+        input[type=text] {
+            width: 500px;
+        }
+    </style>
+
+    <script src="static/js/leaflet.js"></script>
+    <script src="static/js/leaflet.markercluster.js"></script>
+    <script src="static/js/leaflet-search.min.js"></script>
+    <script src="static/js/leaflet.smoothmarkerbouncing.js"></script>
+    <script src="static/js/L.Control.Locate.min.js"></script>
+    <script src="static/js/L.Control.Sidebar.js"></script>
+    <script src="static/js/Control.FullScreen.js"></script>
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/search.js"></script>
+</head>
+
+<body>
+       
+    <div class="ui segment" style="background-color: #6d6a6a; margin: 0em">
+        <div class="ui search">
+            <div class="ui icon input">
+                <input id="query" class="prompt" type="text" placeholder="Search address" style="text-align:center;">
+                <i id="search" class="search icon"></i>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="map"></div>
+
+<script src="static/js/app.js"></script>
+</body>
+</html>
